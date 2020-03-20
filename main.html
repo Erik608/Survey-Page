@@ -1,0 +1,134 @@
+<!doctype HTML>
+<style>
+body {
+    background-color: aqua;
+}
+main {
+    background-color: red;
+    max-width: 425px;
+    padding: 10px;
+    font-size: 14pt;
+    margin: 0 auto;
+}
+#title {
+    font-size: 18pt;
+}
+#description {
+    font-size: 16pt;
+}
+#survey-form {
+    padding: 15px;
+    background-color: blue;
+}
+#user-inputs {
+    background-color: gray;
+    padding: 4px;
+}
+label {
+    line-height: 1.5em;
+}
+#name {
+    width: 150px;
+}
+#email {
+    width: 313px;
+}
+#number {
+    width: 70px;
+}
+#highestlevel {
+    background-color: gray;
+    padding: 0 0 4px 4px;
+}
+#dropdown {
+    text-align: center;
+}
+#shoesponsor {
+    background-color: gray;
+    padding: 0 0 4px 4px;
+}
+#favoriteseason {
+    background-color: gray;
+}
+#comments {
+    background-color: gray;
+}
+#button {
+    background-color: gray;
+    padding: 2px;
+    text-align: center;
+    padding: 0 0 2px 4px;
+}
+#submit {
+    background: blue;
+    color: white;
+}
+</style>
+<html>
+    <body>
+        <main>
+            <H1 id="title">Join the Riverfront Running Club</H1>
+            <p id="description">Please complete this form to be considered for the Riverfront Running Club.</p>
+            </div>
+            <form id="survey-form">
+                <section id="user-inputs">
+                    <label id="name-label">
+                        Name:    <input type="text" placeholder="Name" id="name" required>
+                    </label>
+                    <label id="number-label">
+                        Number: <input type="number" placeholder="Number" id="number" min="1" max="37"><br>
+                    <label id="email-label">
+                        Email:  <input type="email" placeholder="Email" id="email" required>
+                    </label>
+                </section>
+                <section id="highestlevel">
+                    <p>Please select the highest level at which you have competed:</p>
+                    <select id="dropdown" name="highestlevel">
+                        <option value="middleschool">Middle School</option>
+                        <option value="highschool">High School</option>
+                        <option value="college">College</option>
+                        <option value="national">National</option>
+                        <option value="diamondleague">Diamond League</option>
+                        <option value="olympics">Olympics</option>
+                    </select>
+                </section>
+                <section id="shoesponsor">
+                    <p>Please select your shoe sponsor:</p>
+                    <label for="asics">
+                        <input id="asics" type="radio" name="shoebrand" value="asics">Asics
+                    </label>
+                    <label for="newbalance">
+                        <input id="newbalance" type="radio" name="shoebrand" value="newbalance">New Balance
+                    </label>
+                    <label for="nike">
+                        <input id="nike" type="radio" name="shoebrand" value="nike">Nike
+                    </label>
+                    <label for="saucony">
+                        <input id="saucony" type="radio" name="shoebrand" value="saucony">Saucony
+                    </label>
+                    <label for="other">
+                        <input id="other" type="radio" name="shoebrand" value="other">Other
+                    </label>
+                    <label for="notyet">
+                        <input id="notyet" type="radio" name="shoebrand" value="notyet">I don't have one yet.
+                    </label>
+                </section>
+                <section id="favoriteseason">
+                    <p>Please select your favorite season(s):</p>
+                    <label for="winter"><input id="winter" type="checkbox" name="season" value="winter">Winter</label>
+                    <label for="spring"><input id="spring" type="checkbox" name="season" value="spring">Spring</label>
+                    <label for="summer"><input id="summer" type="checkbox" name="season" value="summer">Summer</label>
+                    <label for="fall"><input id="fall" type="checkbox" name="season" value="fall">Fall</label>
+                </section>
+                <br>
+                <section id="comments">
+                    <textarea name="comments">Please enter any additional comments here.</textarea>
+                </section>
+                <br>
+                <section id="button">
+                    <button id="submit" type="submit">Submit</button>
+                </section>
+            </form>
+        </main>
+    </body>
+</html>
